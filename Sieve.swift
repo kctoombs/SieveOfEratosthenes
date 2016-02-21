@@ -8,8 +8,8 @@
 
 import Foundation
 // n will be the max number we want to calculate primes up to
-func Sieve(var n: Int){
-   
+func Sieve(var n: Int) -> String{
+   var result = ""
     //assume all numbers are prime at first (numbers[i] = true)
     var numbers = [Bool](count: n + 1, repeatedValue: true)
     
@@ -25,7 +25,11 @@ func Sieve(var n: Int){
     } //for var i
     for var printer = 0; printer < numbers.count; ++printer{
         if numbers[printer]{
-            print(String(printer) + " ")
+            //print(String(printer) + " ")
+            result = result + " " + String(printer)
         }
     } //for var printer
+    
+    return result
+    
 } //func Sieve
