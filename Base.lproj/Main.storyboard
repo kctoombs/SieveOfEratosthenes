@@ -47,6 +47,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MJf-Io-grg">
+                                <rect key="frame" x="25" y="179" width="281" height="413"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -56,6 +62,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="display" destination="MJf-Io-grg" id="Ep2-r0-tDh"/>
                         <outlet property="getNum" destination="zan-Sg-dex" id="aIT-cQ-FmV"/>
                         <outlet property="label" destination="jGV-0y-qkj" id="yG2-vU-ct1"/>
                     </connections>

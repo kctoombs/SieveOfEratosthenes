@@ -11,11 +11,9 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
     
    // MARK: Properties
-   /* @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var sieveLabel: UILabel!
-    */
     @IBOutlet weak var getNum: UITextField!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var display: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +45,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func calculatePrimes(sender: UIButton) {
         let input: Int? = Int(getNum.text!)
         let primes = Sieve(input!)
-        label.text = primes
+        display.text = primes
     }
 
 }
